@@ -12,19 +12,14 @@ function App() {
       method: "GET",
       redirect: "follow",
     };
-
     fetch(
-      `https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=25&key=${API_KEY}`,
+      `https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=6&key=${API_KEY}`,
       requestOptions
     )
       .then((response) => response.json())
       .then((result) => setVideos(result.items))
       .catch((error) => console.log("error", error));
   }, []);
-
-  useEffect(() => {
-    console.log(videos);
-  }, [videos]);
 
   return <VideoList videos={videos} />;
 }
