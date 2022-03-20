@@ -1,1 +1,7 @@
 /node_modules
+
+# API KEYs
+.env
+
+# etc ..
+.DS_Store

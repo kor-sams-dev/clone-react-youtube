@@ -1,0 +1,41 @@
+.header {
+  height: 70px;
+  background-color: black;
+  align-items: center;
+  display: flex;
+}
+
+.icon {
+  margin-left: 10px;
+}
+
+.title {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.search_container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.search_text {
+  height: 35px;
+  width: 500px;
+  flex: 1;
+}
+
+.search_btn {
+  background-color: black;
+  border: none;
+}
+
+.search_icon {
+  width: 30px;
+  height: 30px;
+}
