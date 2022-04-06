@@ -1,14 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
-import Youtube from "./service/youtube";
-
-const youtube = new Youtube(process.env.REACT_APP_YOUTUBE_API_KEY);
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App youtube={youtube} />
+    <App />
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
